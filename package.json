@@ -1,0 +1,16 @@
+{
+  "name": "RandomWordBot",
+  "version": "1.0.0",
+  "description": "the bot that satisfies all",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Ali",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.2.1",
+    "random-word": "^2.0.0",
+    "request": "^2.83.0"
+  }
+}
