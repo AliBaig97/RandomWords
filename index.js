@@ -16,12 +16,7 @@ var wrongServer = false;
 
 client.on("message", function(message){
   if(message.author.equals(client.user)) return;
-  if(message.guild.name !== 'Elo Geeks'){
-    console.log('works!');
-    wrongServer = true;
-    return;
-  }
-
+  
   if(message.content.startsWith(prefix + "words") && !wrongServer){
     message.channel.send("... Starting Random Word Generator. Have Fun!");
 
