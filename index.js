@@ -18,7 +18,7 @@ client.on("message", function(message){
   if(message.author.equals(client.user)) return;
   
   if(message.content.startsWith(prefix + "words") && !wrongServer){
-    message.channel.send("... Starting Random Word Generator. Have Fun!");
+    message.channel.send("Starting Random Word Generator.. Have Fun!");
 
     message.channel.send(randomWord()); //first randomWord before the interval
     interval = setInterval(function(){
@@ -29,7 +29,7 @@ client.on("message", function(message){
   if(message.content.startsWith(prefix + "end")){ //stop the words
     console.log("Ending words");
     clearInterval(interval);
-    message.channel.send("..Ending Random Word Generator. Goodbye!");
+    message.channel.send("Ending Random Word Generator.. Goodbye!");
   }
 
   if(message.content.startsWith(prefix + "settings")){
